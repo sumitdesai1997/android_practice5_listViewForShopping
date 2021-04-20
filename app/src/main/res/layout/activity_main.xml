@@ -26,9 +26,11 @@
 
         <ListView
             android:id="@+id/lvItem"
-            android:layout_width="411dp"
-            android:layout_height="245dp"
+            android:layout_width="371dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -74,22 +76,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="75dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:text="Add Cart"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sbQty" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
             android:id="@+id/btnShowCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="75dp"
             android:text="Show Cart"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sbQty" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <TextView
             android:id="@+id/textView8"
@@ -97,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="35dp"
-            android:text="Total amount"
+            android:text="Total amount:"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +116,30 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView8"
             app:layout_constraintTop_toBottomOf="@+id/btnAddCart" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Item amount:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/tvItemAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/sbQty" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
