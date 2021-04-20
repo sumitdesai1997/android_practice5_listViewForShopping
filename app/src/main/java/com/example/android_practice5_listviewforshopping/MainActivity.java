@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowCart = findViewById(R.id.btnShowCart);
 
         tvQty.setText("1");
-        tvItemAmount.setText("Item not selected");
+        tvItemAmount.setText("0");
         tvTotAmount.setText(String.valueOf(finalPrice));
 
         fillData();
